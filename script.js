@@ -9,14 +9,24 @@ for (i = 0; i < myNodeList.length; i++){
     myNodeList[i].appendChild(span);
 }
 
-let close = document.getElementsByClassName('close');
-let j;
+// Click on a close button to hide the current list item
+
+let close = document.getElementsByClassName('close')
+
+let j
+
 for (j = 0; j < close.length; j++) {
-    close[j].onClick = function () {
+
+  close[j].onclick = function () {
+
     let div = this.parentElement
+
     div.style.display = 'none'
+
+  }
+
 }
-}
+
 
 
 
